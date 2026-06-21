@@ -17,7 +17,6 @@ import {
   ContainerScroll,
   ContainerAnimated,
 } from "@/components/ui/animated-video-on-scroll";
-import Image from "next/image";
 import {
   Mail,
   Phone,
@@ -343,14 +342,11 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-5">
               <ContainerAnimated className="h-full" transition={{ delay: 0.1 }}>
                 <TiltCard className="h-full" maxRotation={6} scale={1.02}>
-                  <MagicBentoCard className="relative h-full min-h-[300px] md:min-h-full rounded-lg overflow-hidden border border-[#2a2a35] hover:border-[#6b6b83] transition-colors">
-                    <Image
-                      src="/qa-workstation.jpg.png"
+                  <MagicBentoCard className="h-full min-h-[300px] md:min-h-full rounded-lg overflow-hidden border border-[#2a2a35] hover:border-[#6b6b83] transition-colors">
+                    <img
+                      src="qa-workstation.jpg.png"
                       alt="QA workstation"
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      priority
+                      className="w-full h-full object-cover"
                     />
                   </MagicBentoCard>
                 </TiltCard>
